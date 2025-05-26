@@ -19,8 +19,8 @@
                 const data = await response.json();
                 
                 if (response.ok) {
-                    // Salvar dados do usuário no localStorage (para demonstração)
                     localStorage.setItem('token', JSON.stringify(data.token));
+                    localStorage.setItem('user', JSON.stringify(data.user));  // Armazenar dados do usuário
                     
                     // Redirecionar para a página principal (após login bem-sucedido)
                     alert('Login realizado com sucesso!');
