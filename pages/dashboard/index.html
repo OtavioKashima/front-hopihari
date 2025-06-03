@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Site do Prof. Miltin</title>
+		
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+		
+		<style type="text/css" title="MiltinEstilo1" media="all">
+			
+			* {
+				font-family: 'Ubuntu', sans-serif;	
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				font-family: 'Ubuntu', sans-serif;
+				text-align: center;
+				background-color: #f1f1f1
+				
+			}
+					
+			.header {
+			background-color: #FF6B00;
+			color: white;
+			padding: 15px 0;
+			box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			position: fixed;
+			width: 100%;
+			top: 0;
+			z-index: 100;
+		}
+
+		.container {
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
+		}
+
+		.header-content {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.logo img {
+			height: 50px;
+			width: auto;
+		}
+
+		.user-menu {
+			display: flex;
+			align-items: center;
+		}
+
+		.user-info {
+			margin-right: 20px;
+			text-align: right;
+		}
+
+		.user-name {
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		.user-email {
+			font-size: 14px;
+			opacity: 0.9;
+		}
+
+		.logout-btn {
+			padding: 8px 15px;
+			background-color: rgba(255, 255, 255, 0.2);
+			border: 1px solid rgba(255, 255, 255, 0.4);
+			color: white;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+
+		.logout-btn:hover {
+			background-color: white;
+			color: #FF6B00;
+		}
+			
+			
+			.header > h1 {
+				
+				color: #1C1C1C;
+				padding: 15px;
+			}
+			
+			.header > p {
+				padding: 15px;
+			}
+			
+			.header > img {
+				width:200px;
+				border-radius: 10%;
+				filter: grayscale(1);
+				transition: .3s;
+				cursor: pointer;
+			}
+			
+			.avatar {
+				width: 150px;
+				height: 150px;
+				border-radius: 100%;
+				object-fit: cover;
+			}
+			
+			.detalhes > h1 {				
+				color: #1C1C1C;
+				padding: 10px;
+				font-size: 1.25em;
+			}
+			
+			.negrito {
+				font-weight: 700;				
+			}
+			
+			p {
+				color: #404040;
+				padding: 20px;
+			}
+						
+			
+			
+		</style>
+		
+	</head>
+	<header class="header">
+		<div class="container">
+			<div class="header-content">
+				<div class="logo">
+					<img src="https://upload.wikimedia.org/wikipedia/en/b/b8/HopiHari-logo.png" alt="Logo Hopi Hari">
+				</div>
+				<div class="user-menu">
+					<div class="user-info">
+						<div class="user-name" id="user-name">Bem-vindo(a)</div>
+						<div class="user-email" id="user-email"></div>
+					</div>
+					<button class="logout-btn" id="logout-btn">Sair</button>
+	
+					<form action="../dashboard/dashboard.html">
+						<button class="logout-btn">Voltar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+	<body>	
+	<!-- <div class="header"> -->
+		
+		 <h1>Perfil</h1>
+		 <p>
+			Sou um Professor de Programação
+		 </p>
+		 
+		 <img class="avatar" src="../img/bravo.jpg" alt="Avatar">
+	</div>
+		
+	
+	<div class="detalhes">
+		<h1> Detalhes</h1>
+			
+			<span class="negrito" id="first_name, last_name">Nome: </span> <p>Milton Santos</p>
+			<span class="negrito">Idade:</span> <p>34 anos</p>
+			<span class="negrito">Localização:</span> <p>Santa Teresa - ES</p>
+	</div>	
+	</body>
+</html>
