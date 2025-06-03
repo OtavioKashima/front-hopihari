@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async function () {
-    const area = "Aribabiba";
+    const area = "Wild West";
     // const token = localStorage.getItem('token');
     const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTksImZpcnN0X25hbWUiOiJLYXNoaW1hIiwibGFzdF9uYW1lIjoiWXV1a2kiLCJlbWFpbCI6Imthc2hpbWE1MkBnbWFpbC5jb20iLCJiaXJ0aF9kYXRlIjoiMjAwOC0wOC0wNVQwMzowMDowMC4wMDBaIiwicGhvbmUiOiIxNDk5NzY3OTMwMyIsImFkbWluIjowLCJpYXQiOjE3NDgzNTA3NTh9.L11DU4gCqt3xJyMlP3op0AvTt3PWTZU_1OIum1Yt258'
     const response = await fetch(`http://localhost:3000/brinquedos/area/${area}`, {
