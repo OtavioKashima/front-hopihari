@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         const grid = document.querySelector(".rides-grid");
         grid.innerHTML = grid.innerHTML + `<div class="rides-grid">
             <div class="ride-card">
-                <div class="ride-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStVRfFxmJFGfbuyrDC6PHxHGon0e3XV0Mv9Q&s')"></div>
+                <div class="ride-image" style="background-image: url('../../img/${brinquedo.image}')"></div>
                 <div class="ride-info">
                     <h3 class="ride-name">${brinquedo.name}</h3>
                     <div class="ride-time">${brinquedo.waiting_time} min</div>  
